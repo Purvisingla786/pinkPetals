@@ -93,10 +93,12 @@ let categories = [
       </div>
       </div>
 
+<div className="bg-gray-200">
+
       <div className="flex justify-around container">
         <Slider content={categories} className="h-60 w-60 rounded-2xl mx-4 category_slider" slidesPerView={2}
         breakpoints={{
-        
+          
           480:{
             slidesPerView:3
           },
@@ -106,6 +108,7 @@ let categories = [
         }} />
 
       </div>
+        </div>
   </section>
   <section className="py-4 bg-gray-100 ">
     <div className="flex  container">
