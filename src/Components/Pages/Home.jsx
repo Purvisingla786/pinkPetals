@@ -113,8 +113,8 @@ let categories = [
   <section className="py-4 bg-gray-100 ">
     <div className="flex  container">
       <img  src={dress} alt="" />
-      <img src={leftArrow} className="h-28 w-52" alt="" />
-      <p>Dresses</p>
+      {/* <img src={leftArrow} className="h-28 w-52" alt="" /> */}
+      {/* <p>Dresses</p> */}
     </div>
   </section>
   </div>
