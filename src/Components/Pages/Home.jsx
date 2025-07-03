@@ -79,7 +79,7 @@ let categories = [
         <section>
 
       <div className="flex justify-center">
-        <img src={hero} className="max-h-[calc(100vh-150px)] w-full" alt="" />
+        <img src={hero} className="max-h-[calc(100vh-150px)] h-dvh w-full" alt="" />
       </div>
         </section>
 
