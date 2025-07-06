@@ -6,7 +6,7 @@ function RootLayout() {
   return (
     <>
       <Header />
-    <div className="flex">
+    <div className="">
 {/* navbar */}
       <Home />
     </div>

@@ -1,11 +1,11 @@
-import hero from "../../assets/Images/heroImage.png";
 import accessory from "../../assets/Images/watch.jpg";
 import bottoms from "../../assets/Images/bottoms.jpg";
 import ethnic from "../../assets/Images/ethnic.webp";
 import tops from "../../assets/Images/tops.webp";
 import western from "../../assets/Images/western.jpg";
-import dress from "../../assets/Images/dress.webp";
-import leftArrow from "../../assets/Images/left_arrow.gif";
+import bg from '../../assets/Images/hero_bg.webp';
+import heroGif from '../../assets/Images/heroImage.gif'
+import heroGraphic from '../../assets/Images/heroGraphic.png'
 import Slider from "../utils/Slider";
 
 function Home() {
@@ -78,12 +78,21 @@ let categories = [
 
         <section>
 
-      <div className="flex justify-center">
-        <img src={hero} className="max-h-[calc(100vh-150px)] h-dvh w-full" alt="" />
+      <div className=' w-full flex gap-8 max-h-[calc(100vh-152px)] h-full bg-no-repeat bg-cover' style={{ backgroundImage: `url(${bg})` }}>
+       <div className="rounded-3xl pl-12 pr-4  py-10 w-full">
+        <img src={heroGif} alt="" className="w-full h-full" />
+       </div>
+        <div className="font-[Cedarville_Cursive] py-8 w-full text-center">
+         <p className="text-pink-600 font-extrabold text-6xl hero_text">find your fashion style</p>
+         <button className="px-8 py-3 cta border-2 mt-12 border-black rounded-3xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-400 hover:translate-y-1 duration-300">Shop Now</button>
+         <div className="flex justify-end graphic">
+         <img src={heroGraphic} className="h-72 w-72 " alt="" />
+         </div>
+        </div>
       </div>
         </section>
 
-        <section className="space-y-2">
+        <section className="">
 
       <div className="bg-[#fcd3e1]">
 
@@ -95,7 +104,7 @@ let categories = [
 
 <div className="bg-gray-200">
 
-      <div className="flex justify-around container">
+      <div className="flex justify-around container pt-2">
         <Slider content={categories} className="h-60 w-60 rounded-2xl mx-4 category_slider" slidesPerView={2}
         breakpoints={{
           
@@ -112,7 +121,7 @@ let categories = [
   </section>
   <section className="py-4 bg-gray-100 ">
     <div className="flex  container">
-      <img  src={dress} alt="" />
+      {/* <img  src={dress} alt="" /> */}
       {/* <img src={leftArrow} className="h-28 w-52" alt="" /> */}
       {/* <p>Dresses</p> */}
     </div>
