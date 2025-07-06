@@ -78,13 +78,15 @@ let categories = [
 
         <section>
 
-      <div className=' w-full flex gap-8 max-h-[calc(100vh-152px)] h-dvh bg-no-repeat bg-cover' style={{ backgroundImage: `url(${bg})` }}>
-       <div className="rounded-3xl pl-12 pr-4  py-10 w-full">
+      <div className=' w-full flex gap-8 max-h-[calc(100vh-152px)] h-dvh bg-no-repeat bg-cover hero' style={{ backgroundImage: `url(${bg})` }}>
+       <div className="rounded-3xl pl-12 pr-4  py-10 w-full hero_Image">
         <img src={heroGif} alt="" className="w-full h-full" />
        </div>
-        <div className="font-[Cedarville_Cursive] py-8 w-full text-center">
+        <div className="font-[Cedarville_Cursive] py-8 w-full text-center flex flex-col justify-center text">
          <p className="text-pink-600 font-extrabold text-6xl hero_text">find your fashion style</p>
+         <div>
          <button className="px-8 py-3 cta border-2 mt-12 border-black rounded-3xl hover:bg-gradient-to-r hover:from-purple-400 hover:to-pink-400 hover:translate-y-1 duration-300">Shop Now</button>
+         </div>
          <div className="flex justify-end graphic">
          <img src={heroGraphic} className="h-72 w-72 " alt="" />
          </div>
