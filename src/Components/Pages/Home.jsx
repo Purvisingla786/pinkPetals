@@ -78,7 +78,7 @@ let categories = [
 
         <section>
 
-      <div className=' w-full flex gap-8 max-h-[calc(100vh-152px)] h-full bg-no-repeat bg-cover' style={{ backgroundImage: `url(${bg})` }}>
+      <div className=' w-full flex gap-8 max-h-[calc(100vh-152px)] h-dvh bg-no-repeat bg-cover' style={{ backgroundImage: `url(${bg})` }}>
        <div className="rounded-3xl pl-12 pr-4  py-10 w-full">
         <img src={heroGif} alt="" className="w-full h-full" />
        </div>
