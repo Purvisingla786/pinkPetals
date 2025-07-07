@@ -32,7 +32,7 @@ function Header({}) {
      }
      {/* navbar */}
           <div className={`absolute duration-300  top-[112px] left-0 backdrop-blur-xs z-10 h-full w-full ${navOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}>
-      <div className={`w-1/4 h-full secondary_gradient z-20 absolute top-0 left-0 text-center`}>
+      <div className={`w-5/12 h-full secondary_gradient z-20 absolute top-0 left-0 text-center`}>
 
      <div className="p-4 border-b-2 border-gray-200 border-t-2">HOME</div>
           <div className="p-4 border-b-2 border-gray-200">ABOUT</div>
