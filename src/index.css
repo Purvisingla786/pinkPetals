@@ -1,7 +1,10 @@
 @import "tailwindcss";
 
 .primary_gradient {
-  background: linear-gradient(-178deg, #e677a1, #ffffff);
+  background: linear-gradient(-132deg, #e677a1, #ffffff);
+}
+.secondary_gradient {
+  background: linear-gradient(-32deg, #e677a1, #ffffff);
 }
 
 @keyframes slideIn {

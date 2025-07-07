@@ -1,9 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import logo from "../../assets/Images/logo.jfif";
-import { Search, ShoppingBag } from "lucide-react";
+import { Search, ShoppingBag, X } from "lucide-react";
 import Inputs from "../utils/Inputs";
 
-function Header() {
+function Header({}) {
+    const [navOpen,setnavOpen] = useState(false)
   return (
     <>
       <div className="overflow-hidden py-2 bg-[#e677a1]  hidden top_tagline">
@@ -21,11 +22,28 @@ function Header() {
           <div>SHOP</div>
           <div>CONTACT</div>
         </div>
-        <div className="hidden hamburger">
+     {navOpen ?
+     <div onClick={()=>setnavOpen(false)}><X/></div>
+     :<div className={`hidden hamburger`} onClick={()=>setnavOpen(true)}>
           <div className="w-5 rounded-3xl bg-black border-2 border-black mb-0.5"></div>
           <div className="w-5 rounded-3xl bg-black border-2 border-black mb-0.5"></div>
           <div className="w-5 rounded-3xl bg-black border-2 border-black mb-0.5"></div>
+      </div>
+     }
+     {/* navbar */}
+          <div className={`absolute duration-300  top-[112px] left-0 backdrop-blur-xs z-10 h-full w-full ${navOpen ? 'visible opacity-100' : 'invisible opacity-0'}`}>
+      <div className={`w-1/4 h-full secondary_gradient z-20 absolute top-0 left-0 text-center`}>
+
+     <div className="p-4 border-b-2 border-gray-200 border-t-2">HOME</div>
+          <div className="p-4 border-b-2 border-gray-200">ABOUT</div>
+          <div className="p-4 border-b-2 border-gray-200">SHOP</div>
+          <div className="p-4 border-b-2 border-gray-200">CONTACT</div>
+<div className="flex justify-end w-full h-full flex-col">
+  <div>Sign In</div>
+</div>
+      </div>
         </div>
+        {/* navbar */}
         </div>
                 <div className="flex gap-4 items-center">
           <img src={logo} className="h-20 w-28 rounded-2xl logo" alt="" />
